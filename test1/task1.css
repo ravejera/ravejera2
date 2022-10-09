@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    background-color: #8535c2;
+}
+
+.main {
+    width: 1000px;
+    height: 95vh;
+    margin-top: 5rem;
+    margin: auto;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80% auto;
+    /* height: 50% auto; */
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.parent {
+    /* padding: 70px 100px; */
+    width: 200px;
+    height: 160px;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
+.one {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    width: 100%;
+    height: 96%;
+    background-color: #39204c;
+}
+.c-one{
+   width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: rgb(62, 62, 174);
+}
+.two{
+    background-color: rgb(164, 54, 13);
+}
+.three{
+    background-color: rgb(129, 129, 214);
+}
+.four{
+    background-color: rgb(117, 36, 36);
+}
+.five{
+    background-color: greenyellow;
+}
+.six{
+    background-color: yellow;
+}
+.seven{
+    background-color: goldenrod;
+}
