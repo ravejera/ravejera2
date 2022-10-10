@@ -13,7 +13,7 @@ body {
     height: 95vh;
     margin-top: 5rem;
     margin: auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@ body {
 .container {
     width: 80% auto;
     /* height: 50% auto; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
@@ -32,7 +32,7 @@ body {
     /* padding: 70px 100px; */
     width: 200px;
     height: 160px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     border-radius: 10px;
 
 }
@@ -43,13 +43,39 @@ body {
     width: 100%;
     height: 96%;
     background-color: #39204c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .c-one{
    width: 100%;
     height: 50%;
     border-radius: 10px;
     background-color: rgb(62, 62, 174);
+    display: flex;
+    align-items: center;
+
 }
+.b-one{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.child{
+    width: 100%;
+    height: 80%;
+    background-color: #39204c;
+    border-radius: 10px;display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.same{
+    display: flex;
+    align-items: flex-end;
+}
+
 .two{
     background-color: rgb(164, 54, 13);
 }
@@ -67,4 +93,96 @@ body {
 }
 .seven{
     background-color: goldenrod;
+}
+
+
+
+.routine{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+.hours{
+    /* gap: 3px; */
+    margin: 0 10px;
+    color: gray;
+}
+.p{
+    color: white;
+    font-size: x-large;
+}
+.details{
+    margin: 0 5px;
+    color: white;
+}
+.details>img{
+   height: 60px;
+   width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid wheat;
+}
+.days{
+    margin: 0 10px;
+    color: gray;
+    text-transform: capitalize;
+}
+.days>:nth-child(2){
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .main{
+        height: 100%;
+        width: 700px;
+        margin: auto;
+    }
+    .container{
+       display: block;
+    }
+    .parent{
+        width: 400px;
+        height: 140px;
+        margin: 10px;
+    }
+    .details{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .details>img{
+        height: 50px;
+        width: 50px;
+    }
+    .days{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .main{
+        width: 200px;
+        margin: auto ;
+    }
+    .parent{
+        width: 300px;
+    }
+    .hours{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main{
+        width: 500px;
+        margin: auto;
+    }
 }
