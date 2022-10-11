@@ -5,14 +5,14 @@
 
 body {
     font-family: cursive;
-    background-color: plum;
+    background-color: whitesmoke;
 }
 
 /* main styling */
 
 .main {
     width: 100%;
-    height: 98vh;
+    height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ body {
     width: 100% auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2px;
+    /* grid-gap: 2px; */
 }
 
 /* end of styling container class */
@@ -54,19 +54,48 @@ body {
 
 /* image */
 
-.b5 {
+/* .b5 {
     grid-column: 1/4;
     grid-row: 2/4;
     height: 350px;
-    width: 98.6%;
+    width: 98.8%;
     margin: 5px;
-    background-attachment: fixed;
 }
 
-.b5>img {
+.b5>img { 
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: relative;
+} */
+
+.b5{
+    background-image: url("./burst-kUqqaRjJuw0-unsplash.jpeg");
+    grid-column: 1/4;
+    grid-row: 2/4;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* background-repeat: repeat; */
+    width: 745px;
+    height: 400px;
+    /* padding: 20px; */
+    margin: 5px ;
+    /* padding: 40px 45px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.article{
+    margin: 2rem;
+    line-height: 2.5rem;
+    color: black;
+    text-transform: capitalize;
+    font-size: larger;
+}
+.article>button{
+    padding: 0.5rem 4rem;
+    background-color: gray;
+    color: white;
 }
 
 /* end of image */
@@ -95,7 +124,28 @@ body {
 .box>p:nth-child(3){
     text-transform: capitalize;
 }
-
+.b6{
+    text-transform: capitalize;
+}
+.b6>button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(71, 67, 67);
+    color: white;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+.b7{
+    text-transform: capitalize;
+}
+.b7>button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(71, 67, 67);
+    color: white;
+    font-size: 13px;
+    text-transform: capitalize;
+}
 
 /* media screens */
 
@@ -109,6 +159,15 @@ body {
     }
     .link{
         width: 200px;
+    }
+    .b5{
+       width: 620px;
+    }
+    .article{
+       font-size: large;
+    }
+    .article>button{
+       padding: 0.4rem 3rem;
     }
 }
 
@@ -137,6 +196,12 @@ body {
     .link{
         width: 300px;
     }
+    .article{
+        font-size: small;
+     }
+     .article>button{
+        padding: 0.4rem 3rem;
+     }
 
 }
 
